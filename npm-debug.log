@@ -1,0 +1,581 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'hapi-auth-basic',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'hapi-auth-basic', null ]
+6 verbose cache add name=undefined spec="hapi-auth-basic" args=["hapi-auth-basic",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'hapi-auth-basic',
+7 verbose parsed url   path: 'hapi-auth-basic',
+7 verbose parsed url   href: 'hapi-auth-basic' }
+8 silly lockFile d2158a58-hapi-auth-basic hapi-auth-basic
+9 verbose lock hapi-auth-basic C:\Users\nickb\AppData\Roaming\npm-cache\d2158a58-hapi-auth-basic.lock
+10 silly lockFile d2158a58-hapi-auth-basic hapi-auth-basic
+11 silly lockFile d2158a58-hapi-auth-basic hapi-auth-basic
+12 verbose addNamed [ 'hapi-auth-basic', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 8a4f5dfc-hapi-auth-basic hapi-auth-basic@
+15 verbose lock hapi-auth-basic@ C:\Users\nickb\AppData\Roaming\npm-cache\8a4f5dfc-hapi-auth-basic.lock
+16 silly addNameRange { name: 'hapi-auth-basic', range: '*', hasData: false }
+17 verbose request where is /hapi-auth-basic
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 5678fee4ccd93e80
+20 verbose url raw /hapi-auth-basic
+21 verbose url resolving [ 'https://registry.npmjs.org/', './hapi-auth-basic' ]
+22 verbose url resolved https://registry.npmjs.org/hapi-auth-basic
+23 verbose request where is https://registry.npmjs.org/hapi-auth-basic
+24 info trying registry request attempt 1 at 16:56:43
+25 verbose etag "CQ26T0UBW5OHNM5PWHBA8ZTF6"
+26 http GET https://registry.npmjs.org/hapi-auth-basic
+27 http 304 https://registry.npmjs.org/hapi-auth-basic
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Mon, 01 Dec 2014 14:56:40 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Mon, 01 Dec 2014 14:56:40 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"CQ26T0UBW5OHNM5PWHBA8ZTF6"',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-fra1233-FRA',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1417445800.643838,VS0,VE184',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/hapi-auth-basic from cache
+30 silly addNameRange number 2 { name: 'hapi-auth-basic', range: '*', hasData: true }
+31 silly addNameRange versions [ 'hapi-auth-basic',
+31 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.1.0', '1.1.1', '2.0.0-rc1' ] ]
+32 verbose addNamed [ 'hapi-auth-basic', '2.0.0-rc1' ]
+33 verbose addNamed [ '2.0.0-rc1', '2.0.0-rc1' ]
+34 silly lockFile 26524c1d-hapi-auth-basic-2-0-0-rc1 hapi-auth-basic@2.0.0-rc1
+35 verbose lock hapi-auth-basic@2.0.0-rc1 C:\Users\nickb\AppData\Roaming\npm-cache\26524c1d-hapi-auth-basic-2-0-0-rc1.lock
+36 silly lockFile 26524c1d-hapi-auth-basic-2-0-0-rc1 hapi-auth-basic@2.0.0-rc1
+37 silly lockFile 26524c1d-hapi-auth-basic-2-0-0-rc1 hapi-auth-basic@2.0.0-rc1
+38 silly lockFile 8a4f5dfc-hapi-auth-basic hapi-auth-basic@
+39 silly lockFile 8a4f5dfc-hapi-auth-basic hapi-auth-basic@
+40 silly resolved [ { name: 'hapi-auth-basic',
+40 silly resolved     description: 'Basic authentication plugin',
+40 silly resolved     version: '2.0.0-rc1',
+40 silly resolved     repository: { type: 'git', url: 'git://github.com/hapijs/hapi-auth-basic' },
+40 silly resolved     main: 'index',
+40 silly resolved     keywords: [ 'hapi', 'plugin', 'auth', 'basic' ],
+40 silly resolved     engines: { node: '>=0.10.32' },
+40 silly resolved     dependencies: { boom: '2.x.x', hoek: '2.x.x' },
+40 silly resolved     peerDependencies: { hapi: '>=8.x.x' },
+40 silly resolved     devDependencies: { code: '1.x.x', hapi: '8.x.x', lab: '5.x.x' },
+40 silly resolved     scripts: { test: 'make test-cov' },
+40 silly resolved     licenses: [ [Object] ],
+40 silly resolved     gitHead: 'a60cfc6b1b5ea4a8783bce4f6f3ea423e51243e3',
+40 silly resolved     bugs: { url: 'https://github.com/hapijs/hapi-auth-basic/issues' },
+40 silly resolved     homepage: 'https://github.com/hapijs/hapi-auth-basic',
+40 silly resolved     _id: 'hapi-auth-basic@2.0.0-rc1',
+40 silly resolved     _shasum: '6c21d922f5d6c6133981158bd427fe4db766b5b2',
+40 silly resolved     _from: 'hapi-auth-basic@',
+40 silly resolved     _npmVersion: '1.4.28',
+40 silly resolved     _npmUser: { name: 'hueniverse', email: 'eran@hueniverse.com' },
+40 silly resolved     maintainers: [ [Object], [Object] ],
+40 silly resolved     dist:
+40 silly resolved      { shasum: '6c21d922f5d6c6133981158bd427fe4db766b5b2',
+40 silly resolved        tarball: 'http://registry.npmjs.org/hapi-auth-basic/-/hapi-auth-basic-2.0.0-rc1.tgz' },
+40 silly resolved     directories: {},
+40 silly resolved     _resolved: 'https://registry.npmjs.org/hapi-auth-basic/-/hapi-auth-basic-2.0.0-rc1.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install hapi-auth-basic@2.0.0-rc1 into D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi
+42 info installOne hapi-auth-basic@2.0.0-rc1
+43 verbose node_modules\hapi-auth-basic unbuild
+44 verbose tar unpack C:\Users\nickb\AppData\Roaming\npm-cache\hapi-auth-basic\2.0.0-rc1\package.tgz
+45 silly lockFile 12e88927-api-node-modules-hapi-auth-basic tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic
+46 verbose lock tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic C:\Users\nickb\AppData\Roaming\npm-cache\12e88927-api-node-modules-hapi-auth-basic.lock
+47 silly lockFile 41e15dfb-auth-basic-2-0-0-rc1-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\hapi-auth-basic\2.0.0-rc1\package.tgz
+48 verbose lock tar://C:\Users\nickb\AppData\Roaming\npm-cache\hapi-auth-basic\2.0.0-rc1\package.tgz C:\Users\nickb\AppData\Roaming\npm-cache\41e15dfb-auth-basic-2-0-0-rc1-package-tgz.lock
+49 silly gunzTarPerm modes [ '777', '666' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm modified mode [ 'package.json', 509, 511 ]
+52 silly gunzTarPerm extractEntry .npmignore
+53 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm modified mode [ 'README.md', 509, 511 ]
+56 silly gunzTarPerm extractEntry LICENSE
+57 silly gunzTarPerm modified mode [ 'LICENSE', 509, 511 ]
+58 silly gunzTarPerm extractEntry index.js
+59 silly gunzTarPerm modified mode [ 'index.js', 509, 511 ]
+60 silly gunzTarPerm extractEntry Makefile
+61 silly gunzTarPerm modified mode [ 'Makefile', 509, 511 ]
+62 silly gunzTarPerm extractEntry .travis.yml
+63 silly gunzTarPerm modified mode [ '.travis.yml', 509, 511 ]
+64 silly gunzTarPerm extractEntry lib/index.js
+65 silly gunzTarPerm modified mode [ 'lib/index.js', 484, 502 ]
+66 silly gunzTarPerm extractEntry CONTRIBUTING.md
+67 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 438 ]
+68 silly gunzTarPerm extractEntry test/index.js
+69 silly gunzTarPerm modified mode [ 'test/index.js', 484, 502 ]
+70 silly lockFile 12e88927-api-node-modules-hapi-auth-basic tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic
+71 silly lockFile 12e88927-api-node-modules-hapi-auth-basic tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic
+72 silly lockFile 41e15dfb-auth-basic-2-0-0-rc1-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\hapi-auth-basic\2.0.0-rc1\package.tgz
+73 silly lockFile 41e15dfb-auth-basic-2-0-0-rc1-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\hapi-auth-basic\2.0.0-rc1\package.tgz
+74 info preinstall hapi-auth-basic@2.0.0-rc1
+75 verbose readDependencies using package.json deps
+76 verbose readDependencies using package.json deps
+77 verbose cache add [ 'boom@2.x.x', null ]
+78 verbose cache add name=undefined spec="boom@2.x.x" args=["boom@2.x.x",null]
+79 verbose parsed url { protocol: null,
+79 verbose parsed url   slashes: null,
+79 verbose parsed url   auth: null,
+79 verbose parsed url   host: null,
+79 verbose parsed url   port: null,
+79 verbose parsed url   hostname: null,
+79 verbose parsed url   hash: null,
+79 verbose parsed url   search: null,
+79 verbose parsed url   query: null,
+79 verbose parsed url   pathname: 'boom@2.x.x',
+79 verbose parsed url   path: 'boom@2.x.x',
+79 verbose parsed url   href: 'boom@2.x.x' }
+80 verbose cache add [ 'hoek@2.x.x', null ]
+81 verbose cache add name=undefined spec="hoek@2.x.x" args=["hoek@2.x.x",null]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: 'hoek@2.x.x',
+82 verbose parsed url   path: 'hoek@2.x.x',
+82 verbose parsed url   href: 'hoek@2.x.x' }
+83 verbose cache add name="boom" spec="2.x.x" args=["boom","2.x.x"]
+84 verbose parsed url { protocol: null,
+84 verbose parsed url   slashes: null,
+84 verbose parsed url   auth: null,
+84 verbose parsed url   host: null,
+84 verbose parsed url   port: null,
+84 verbose parsed url   hostname: null,
+84 verbose parsed url   hash: null,
+84 verbose parsed url   search: null,
+84 verbose parsed url   query: null,
+84 verbose parsed url   pathname: '2.x.x',
+84 verbose parsed url   path: '2.x.x',
+84 verbose parsed url   href: '2.x.x' }
+85 verbose addNamed [ 'boom', '2.x.x' ]
+86 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+87 silly lockFile be740072-boom-2-x-x boom@2.x.x
+88 verbose lock boom@2.x.x C:\Users\nickb\AppData\Roaming\npm-cache\be740072-boom-2-x-x.lock
+89 verbose cache add name="hoek" spec="2.x.x" args=["hoek","2.x.x"]
+90 verbose parsed url { protocol: null,
+90 verbose parsed url   slashes: null,
+90 verbose parsed url   auth: null,
+90 verbose parsed url   host: null,
+90 verbose parsed url   port: null,
+90 verbose parsed url   hostname: null,
+90 verbose parsed url   hash: null,
+90 verbose parsed url   search: null,
+90 verbose parsed url   query: null,
+90 verbose parsed url   pathname: '2.x.x',
+90 verbose parsed url   path: '2.x.x',
+90 verbose parsed url   href: '2.x.x' }
+91 verbose addNamed [ 'hoek', '2.x.x' ]
+92 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+93 silly lockFile 7920b061-hoek-2-x-x hoek@2.x.x
+94 verbose lock hoek@2.x.x C:\Users\nickb\AppData\Roaming\npm-cache\7920b061-hoek-2-x-x.lock
+95 silly addNameRange { name: 'boom', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+96 silly addNameRange { name: 'hoek', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+97 verbose request where is /boom
+98 verbose request registry https://registry.npmjs.org/
+99 verbose url raw /boom
+100 verbose url resolving [ 'https://registry.npmjs.org/', './boom' ]
+101 verbose url resolved https://registry.npmjs.org/boom
+102 verbose request where is https://registry.npmjs.org/boom
+103 info trying registry request attempt 1 at 16:56:43
+104 verbose etag "7M4Y5V4RQ0QZ6R6LVJ5F60YDT"
+105 http GET https://registry.npmjs.org/boom
+106 verbose request where is /hoek
+107 verbose request registry https://registry.npmjs.org/
+108 verbose url raw /hoek
+109 verbose url resolving [ 'https://registry.npmjs.org/', './hoek' ]
+110 verbose url resolved https://registry.npmjs.org/hoek
+111 verbose request where is https://registry.npmjs.org/hoek
+112 info trying registry request attempt 1 at 16:56:43
+113 verbose etag "5FLZP5KWTEVJX6XFPQZVPOZ60"
+114 http GET https://registry.npmjs.org/hoek
+115 http 304 https://registry.npmjs.org/boom
+116 silly registry.get cb [ 304,
+116 silly registry.get   { date: 'Mon, 01 Dec 2014 14:56:41 GMT',
+116 silly registry.get     server: 'Apache',
+116 silly registry.get     via: '1.1 varnish',
+116 silly registry.get     'last-modified': 'Mon, 01 Dec 2014 14:56:26 GMT',
+116 silly registry.get     'cache-control': 'max-age=60',
+116 silly registry.get     etag: '"7M4Y5V4RQ0QZ6R6LVJ5F60YDT"',
+116 silly registry.get     age: '19',
+116 silly registry.get     'x-served-by': 'cache-fra1245-FRA',
+116 silly registry.get     'x-cache': 'HIT',
+116 silly registry.get     'x-cache-hits': '2',
+116 silly registry.get     'x-timer': 'S1417445801.104473,VS0,VE0',
+116 silly registry.get     vary: 'Accept',
+116 silly registry.get     'content-length': '0',
+116 silly registry.get     'keep-alive': 'timeout=10, max=50',
+116 silly registry.get     connection: 'Keep-Alive' } ]
+117 verbose etag https://registry.npmjs.org/boom from cache
+118 http 304 https://registry.npmjs.org/hoek
+119 silly registry.get cb [ 304,
+119 silly registry.get   { date: 'Mon, 01 Dec 2014 14:56:41 GMT',
+119 silly registry.get     server: 'Apache',
+119 silly registry.get     via: '1.1 varnish',
+119 silly registry.get     'last-modified': 'Mon, 01 Dec 2014 14:55:55 GMT',
+119 silly registry.get     'cache-control': 'max-age=60',
+119 silly registry.get     etag: '"5FLZP5KWTEVJX6XFPQZVPOZ60"',
+119 silly registry.get     age: '50',
+119 silly registry.get     'x-served-by': 'cache-fra1235-FRA',
+119 silly registry.get     'x-cache': 'HIT',
+119 silly registry.get     'x-cache-hits': '9',
+119 silly registry.get     'x-timer': 'S1417445801.109029,VS0,VE0',
+119 silly registry.get     vary: 'Accept',
+119 silly registry.get     'content-length': '0',
+119 silly registry.get     'keep-alive': 'timeout=10, max=50',
+119 silly registry.get     connection: 'Keep-Alive' } ]
+120 verbose etag https://registry.npmjs.org/hoek from cache
+121 silly addNameRange number 2 { name: 'boom', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+122 silly addNameRange versions [ 'boom',
+122 silly addNameRange   [ '0.0.1',
+122 silly addNameRange     '0.0.2',
+122 silly addNameRange     '0.1.0',
+122 silly addNameRange     '0.2.0',
+122 silly addNameRange     '0.2.1',
+122 silly addNameRange     '0.3.0',
+122 silly addNameRange     '0.3.1',
+122 silly addNameRange     '0.3.2',
+122 silly addNameRange     '0.3.3',
+122 silly addNameRange     '0.3.4',
+122 silly addNameRange     '0.3.5',
+122 silly addNameRange     '0.3.6',
+122 silly addNameRange     '0.3.7',
+122 silly addNameRange     '0.3.8',
+122 silly addNameRange     '0.4.0',
+122 silly addNameRange     '0.4.1',
+122 silly addNameRange     '0.4.2',
+122 silly addNameRange     '1.0.0',
+122 silly addNameRange     '1.0.1',
+122 silly addNameRange     '1.0.2',
+122 silly addNameRange     '1.1.0',
+122 silly addNameRange     '1.1.1',
+122 silly addNameRange     '1.1.2',
+122 silly addNameRange     '1.2.0',
+122 silly addNameRange     '1.2.1',
+122 silly addNameRange     '2.0.0',
+122 silly addNameRange     '2.1.0',
+122 silly addNameRange     '2.2.0',
+122 silly addNameRange     '2.2.1',
+122 silly addNameRange     '2.2.2',
+122 silly addNameRange     '2.3.0',
+122 silly addNameRange     '2.4.0',
+122 silly addNameRange     '2.4.1',
+122 silly addNameRange     '2.4.2',
+122 silly addNameRange     '2.5.0',
+122 silly addNameRange     '2.5.1',
+122 silly addNameRange     '2.6.0',
+122 silly addNameRange     '2.6.1' ] ]
+123 verbose addNamed [ 'boom', '2.6.1' ]
+124 verbose addNamed [ '2.6.1', '2.6.1' ]
+125 silly lockFile f3dcf19f-boom-2-6-1 boom@2.6.1
+126 verbose lock boom@2.6.1 C:\Users\nickb\AppData\Roaming\npm-cache\f3dcf19f-boom-2-6-1.lock
+127 silly addNameRange number 2 { name: 'hoek', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+128 silly addNameRange versions [ 'hoek',
+128 silly addNameRange   [ '0.0.1',
+128 silly addNameRange     '0.0.2',
+128 silly addNameRange     '0.0.3',
+128 silly addNameRange     '0.0.4',
+128 silly addNameRange     '0.0.5',
+128 silly addNameRange     '0.0.6',
+128 silly addNameRange     '0.0.7',
+128 silly addNameRange     '0.0.8',
+128 silly addNameRange     '0.0.9',
+128 silly addNameRange     '0.0.10',
+128 silly addNameRange     '0.0.11',
+128 silly addNameRange     '0.0.12',
+128 silly addNameRange     '0.0.13',
+128 silly addNameRange     '0.0.14',
+128 silly addNameRange     '0.0.15',
+128 silly addNameRange     '0.0.16',
+128 silly addNameRange     '0.0.17',
+128 silly addNameRange     '0.0.18',
+128 silly addNameRange     '0.0.19',
+128 silly addNameRange     '0.0.21',
+128 silly addNameRange     '0.1.0',
+128 silly addNameRange     '0.2.0',
+128 silly addNameRange     '0.3.0',
+128 silly addNameRange     '0.4.0',
+128 silly addNameRange     '0.4.1',
+128 silly addNameRange     '0.4.2',
+128 silly addNameRange     '0.4.3',
+128 silly addNameRange     '0.4.4',
+128 silly addNameRange     '0.4.5',
+128 silly addNameRange     '0.5.0',
+128 silly addNameRange     '0.6.0',
+128 silly addNameRange     '0.6.1',
+128 silly addNameRange     '0.6.2',
+128 silly addNameRange     '0.7.0',
+128 silly addNameRange     '0.7.1',
+128 silly addNameRange     '0.7.2',
+128 silly addNameRange     '0.7.3',
+128 silly addNameRange     '0.7.4',
+128 silly addNameRange     '0.7.5',
+128 silly addNameRange     '0.7.6',
+128 silly addNameRange     '0.8.0',
+128 silly addNameRange     '0.8.1',
+128 silly addNameRange     '0.8.2',
+128 silly addNameRange     '0.8.3',
+128 silly addNameRange     '0.8.4',
+128 silly addNameRange     '0.8.5',
+128 silly addNameRange     '0.9.0',
+128 silly addNameRange     '0.9.1',
+128 silly addNameRange     '0.10.0',
+128 silly addNameRange     '1.0.0',
+128 silly addNameRange     '1.0.1',
+128 silly addNameRange     '1.0.2',
+128 silly addNameRange     '1.0.3',
+128 silly addNameRange     '1.1.0',
+128 silly addNameRange     '1.1.1',
+128 silly addNameRange     '1.1.2',
+128 silly addNameRange     '1.2.0',
+128 silly addNameRange     '1.3.0',
+128 silly addNameRange     '1.4.0',
+128 silly addNameRange     '1.4.1',
+128 silly addNameRange     '1.5.0',
+128 silly addNameRange     '1.5.1',
+128 silly addNameRange     '1.5.2',
+128 silly addNameRange     '2.0.0',
+128 silly addNameRange     '2.1.0',
+128 silly addNameRange     '2.1.1',
+128 silly addNameRange     '2.2.0',
+128 silly addNameRange     '2.3.0',
+128 silly addNameRange     '2.4.0',
+128 silly addNameRange     '2.4.1',
+128 silly addNameRange     '2.5.0',
+128 silly addNameRange     '2.5.1',
+128 silly addNameRange     '2.6.0',
+128 silly addNameRange     '2.7.0',
+128 silly addNameRange     '2.8.0',
+128 silly addNameRange     '2.8.1',
+128 silly addNameRange     '2.9.0',
+128 silly addNameRange     '2.9.1',
+128 silly addNameRange     '2.10.0' ] ]
+129 verbose addNamed [ 'hoek', '2.10.0' ]
+130 verbose addNamed [ '2.10.0', '2.10.0' ]
+131 silly lockFile 0531f8fd-hoek-2-10-0 hoek@2.10.0
+132 verbose lock hoek@2.10.0 C:\Users\nickb\AppData\Roaming\npm-cache\0531f8fd-hoek-2-10-0.lock
+133 silly lockFile f3dcf19f-boom-2-6-1 boom@2.6.1
+134 silly lockFile f3dcf19f-boom-2-6-1 boom@2.6.1
+135 silly lockFile be740072-boom-2-x-x boom@2.x.x
+136 silly lockFile be740072-boom-2-x-x boom@2.x.x
+137 silly lockFile 0531f8fd-hoek-2-10-0 hoek@2.10.0
+138 silly lockFile 0531f8fd-hoek-2-10-0 hoek@2.10.0
+139 silly lockFile 7920b061-hoek-2-x-x hoek@2.x.x
+140 silly lockFile 7920b061-hoek-2-x-x hoek@2.x.x
+141 silly resolved [ { name: 'boom',
+141 silly resolved     description: 'HTTP-friendly error objects',
+141 silly resolved     version: '2.6.1',
+141 silly resolved     repository: { type: 'git', url: 'git://github.com/hapijs/boom' },
+141 silly resolved     main: 'index',
+141 silly resolved     keywords: [ 'error', 'http' ],
+141 silly resolved     engines: { node: '>=0.8.0' },
+141 silly resolved     dependencies: { hoek: '2.x.x' },
+141 silly resolved     devDependencies: { code: '1.x.x', lab: '5.x.x' },
+141 silly resolved     scripts: { test: 'make test-cov' },
+141 silly resolved     licenses: [ [Object] ],
+141 silly resolved     gitHead: '860d6f8b0db89b263418b8575c65560482cbd1ba',
+141 silly resolved     bugs: { url: 'https://github.com/hapijs/boom/issues' },
+141 silly resolved     homepage: 'https://github.com/hapijs/boom',
+141 silly resolved     _id: 'boom@2.6.1',
+141 silly resolved     _shasum: '4dc8ef9b6dfad9c43bbbfbe71fa4c21419f22753',
+141 silly resolved     _from: 'boom@2.x.x',
+141 silly resolved     _npmVersion: '1.4.28',
+141 silly resolved     _npmUser: { name: 'hueniverse', email: 'eran@hueniverse.com' },
+141 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+141 silly resolved     dist:
+141 silly resolved      { shasum: '4dc8ef9b6dfad9c43bbbfbe71fa4c21419f22753',
+141 silly resolved        tarball: 'http://registry.npmjs.org/boom/-/boom-2.6.1.tgz' },
+141 silly resolved     directories: {},
+141 silly resolved     _resolved: 'https://registry.npmjs.org/boom/-/boom-2.6.1.tgz',
+141 silly resolved     readme: 'ERROR: No README data found!' },
+141 silly resolved   { name: 'hoek',
+141 silly resolved     description: 'General purpose node utilities',
+141 silly resolved     version: '2.10.0',
+141 silly resolved     repository: { type: 'git', url: 'git://github.com/hapijs/hoek' },
+141 silly resolved     main: 'index',
+141 silly resolved     keywords: [ 'utilities' ],
+141 silly resolved     engines: { node: '>=0.8.0' },
+141 silly resolved     dependencies: {},
+141 silly resolved     devDependencies: { code: '1.x.x', lab: '5.x.x' },
+141 silly resolved     scripts: { test: 'make test-cov' },
+141 silly resolved     licenses: [ [Object] ],
+141 silly resolved     gitHead: '5e543bbb9c62f110a7c022ff1e6c7a17e0b13bfb',
+141 silly resolved     bugs: { url: 'https://github.com/hapijs/hoek/issues' },
+141 silly resolved     homepage: 'https://github.com/hapijs/hoek',
+141 silly resolved     _id: 'hoek@2.10.0',
+141 silly resolved     _shasum: 'bbac4db10e1e02d220dda5b164e3307ad0c7b785',
+141 silly resolved     _from: 'hoek@2.x.x',
+141 silly resolved     _npmVersion: '1.4.28',
+141 silly resolved     _npmUser: { name: 'hueniverse', email: 'eran@hueniverse.com' },
+141 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+141 silly resolved     dist:
+141 silly resolved      { shasum: 'bbac4db10e1e02d220dda5b164e3307ad0c7b785',
+141 silly resolved        tarball: 'http://registry.npmjs.org/hoek/-/hoek-2.10.0.tgz' },
+141 silly resolved     directories: {},
+141 silly resolved     _resolved: 'https://registry.npmjs.org/hoek/-/hoek-2.10.0.tgz',
+141 silly resolved     readme: 'ERROR: No README data found!' } ]
+142 info install boom@2.6.1 into D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic
+143 info install hoek@2.10.0 into D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic
+144 info installOne boom@2.6.1
+145 info installOne hoek@2.10.0
+146 verbose node_modules\hapi-auth-basic\node_modules\boom unbuild
+147 verbose node_modules\hapi-auth-basic\node_modules\hoek unbuild
+148 verbose tar unpack C:\Users\nickb\AppData\Roaming\npm-cache\boom\2.6.1\package.tgz
+149 silly lockFile 9a0c66d4-api-auth-basic-node-modules-boom tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\boom
+150 verbose lock tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\boom C:\Users\nickb\AppData\Roaming\npm-cache\9a0c66d4-api-auth-basic-node-modules-boom.lock
+151 silly lockFile 558d4d65-npm-cache-boom-2-6-1-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\boom\2.6.1\package.tgz
+152 verbose lock tar://C:\Users\nickb\AppData\Roaming\npm-cache\boom\2.6.1\package.tgz C:\Users\nickb\AppData\Roaming\npm-cache\558d4d65-npm-cache-boom-2-6-1-package-tgz.lock
+153 verbose tar unpack C:\Users\nickb\AppData\Roaming\npm-cache\hoek\2.10.0\package.tgz
+154 silly lockFile a8edd88f-api-auth-basic-node-modules-hoek tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\hoek
+155 verbose lock tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\hoek C:\Users\nickb\AppData\Roaming\npm-cache\a8edd88f-api-auth-basic-node-modules-hoek.lock
+156 silly lockFile 076a5e8f-pm-cache-hoek-2-10-0-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\hoek\2.10.0\package.tgz
+157 verbose lock tar://C:\Users\nickb\AppData\Roaming\npm-cache\hoek\2.10.0\package.tgz C:\Users\nickb\AppData\Roaming\npm-cache\076a5e8f-pm-cache-hoek-2-10-0-package-tgz.lock
+158 silly gunzTarPerm modes [ '777', '666' ]
+159 silly gunzTarPerm modes [ '777', '666' ]
+160 silly gunzTarPerm extractEntry package.json
+161 silly gunzTarPerm modified mode [ 'package.json', 509, 511 ]
+162 silly gunzTarPerm extractEntry package.json
+163 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+164 silly gunzTarPerm extractEntry .npmignore
+165 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+166 silly gunzTarPerm extractEntry README.md
+167 silly gunzTarPerm modified mode [ 'README.md', 509, 511 ]
+168 silly gunzTarPerm extractEntry .npmignore
+169 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+170 silly gunzTarPerm extractEntry README.md
+171 silly gunzTarPerm modified mode [ 'README.md', 509, 511 ]
+172 silly gunzTarPerm extractEntry LICENSE
+173 silly gunzTarPerm modified mode [ 'LICENSE', 509, 511 ]
+174 silly gunzTarPerm extractEntry LICENSE
+175 silly gunzTarPerm modified mode [ 'LICENSE', 509, 511 ]
+176 silly gunzTarPerm extractEntry index.js
+177 silly gunzTarPerm modified mode [ 'index.js', 509, 511 ]
+178 silly gunzTarPerm extractEntry CONTRIBUTING.md
+179 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 438 ]
+180 silly gunzTarPerm extractEntry index.js
+181 silly gunzTarPerm modified mode [ 'index.js', 509, 511 ]
+182 silly gunzTarPerm extractEntry CONTRIBUTING.md
+183 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 438 ]
+184 silly gunzTarPerm extractEntry .travis.yml
+185 silly gunzTarPerm modified mode [ '.travis.yml', 509, 511 ]
+186 silly gunzTarPerm extractEntry test/index.js
+187 silly gunzTarPerm modified mode [ 'test/index.js', 484, 502 ]
+188 silly gunzTarPerm extractEntry .travis.yml
+189 silly gunzTarPerm modified mode [ '.travis.yml', 509, 511 ]
+190 silly gunzTarPerm extractEntry test/escaper.js
+191 silly gunzTarPerm modified mode [ 'test/escaper.js', 509, 511 ]
+192 silly gunzTarPerm extractEntry lib/index.js
+193 silly gunzTarPerm modified mode [ 'lib/index.js', 509, 511 ]
+194 silly gunzTarPerm extractEntry Makefile
+195 silly gunzTarPerm modified mode [ 'Makefile', 484, 502 ]
+196 silly gunzTarPerm extractEntry test/index.js
+197 silly gunzTarPerm modified mode [ 'test/index.js', 509, 511 ]
+198 silly gunzTarPerm extractEntry test/modules/test1.js
+199 silly gunzTarPerm modified mode [ 'test/modules/test1.js', 509, 511 ]
+200 silly gunzTarPerm extractEntry test/modules/test2.js
+201 silly gunzTarPerm modified mode [ 'test/modules/test2.js', 509, 511 ]
+202 silly gunzTarPerm extractEntry test/modules/test3.js
+203 silly gunzTarPerm modified mode [ 'test/modules/test3.js', 509, 511 ]
+204 silly gunzTarPerm extractEntry images/boom.png
+205 silly gunzTarPerm modified mode [ 'images/boom.png', 509, 511 ]
+206 silly gunzTarPerm extractEntry test/modules/ignore.txt
+207 silly gunzTarPerm modified mode [ 'test/modules/ignore.txt', 436, 438 ]
+208 silly gunzTarPerm extractEntry lib/escape.js
+209 silly gunzTarPerm modified mode [ 'lib/escape.js', 509, 511 ]
+210 silly gunzTarPerm extractEntry lib/index.js
+211 silly gunzTarPerm modified mode [ 'lib/index.js', 509, 511 ]
+212 silly gunzTarPerm extractEntry Makefile
+213 silly gunzTarPerm modified mode [ 'Makefile', 509, 511 ]
+214 silly gunzTarPerm extractEntry images/hoek.png
+215 silly gunzTarPerm modified mode [ 'images/hoek.png', 509, 511 ]
+216 silly lockFile 9a0c66d4-api-auth-basic-node-modules-boom tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\boom
+217 silly lockFile 9a0c66d4-api-auth-basic-node-modules-boom tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\boom
+218 silly lockFile 558d4d65-npm-cache-boom-2-6-1-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\boom\2.6.1\package.tgz
+219 silly lockFile 558d4d65-npm-cache-boom-2-6-1-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\boom\2.6.1\package.tgz
+220 info preinstall boom@2.6.1
+221 verbose readDependencies using package.json deps
+222 verbose readDependencies using package.json deps
+223 silly resolved []
+224 verbose about to build D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\boom
+225 info build D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\boom
+226 verbose linkStuff [ false,
+226 verbose linkStuff   false,
+226 verbose linkStuff   false,
+226 verbose linkStuff   'D:\\work\\tutorials-sandbox\\hapi-find-my-car\\find-my-car-hapi\\node_modules\\hapi-auth-basic\\node_modules' ]
+227 info linkStuff boom@2.6.1
+228 verbose linkBins boom@2.6.1
+229 verbose linkMans boom@2.6.1
+230 verbose rebuildBundles boom@2.6.1
+231 info install boom@2.6.1
+232 info postinstall boom@2.6.1
+233 silly lockFile a8edd88f-api-auth-basic-node-modules-hoek tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\hoek
+234 silly lockFile a8edd88f-api-auth-basic-node-modules-hoek tar://D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\hoek
+235 silly lockFile 076a5e8f-pm-cache-hoek-2-10-0-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\hoek\2.10.0\package.tgz
+236 silly lockFile 076a5e8f-pm-cache-hoek-2-10-0-package-tgz tar://C:\Users\nickb\AppData\Roaming\npm-cache\hoek\2.10.0\package.tgz
+237 info preinstall hoek@2.10.0
+238 verbose readDependencies using package.json deps
+239 verbose readDependencies using package.json deps
+240 silly resolved []
+241 verbose about to build D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\hoek
+242 info build D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic\node_modules\hoek
+243 verbose linkStuff [ false,
+243 verbose linkStuff   false,
+243 verbose linkStuff   false,
+243 verbose linkStuff   'D:\\work\\tutorials-sandbox\\hapi-find-my-car\\find-my-car-hapi\\node_modules\\hapi-auth-basic\\node_modules' ]
+244 info linkStuff hoek@2.10.0
+245 verbose linkBins hoek@2.10.0
+246 verbose linkMans hoek@2.10.0
+247 verbose rebuildBundles hoek@2.10.0
+248 info install hoek@2.10.0
+249 info postinstall hoek@2.10.0
+250 verbose about to build D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic
+251 info build D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi\node_modules\hapi-auth-basic
+252 verbose linkStuff [ false,
+252 verbose linkStuff   false,
+252 verbose linkStuff   false,
+252 verbose linkStuff   'D:\\work\\tutorials-sandbox\\hapi-find-my-car\\find-my-car-hapi\\node_modules' ]
+253 info linkStuff hapi-auth-basic@2.0.0-rc1
+254 verbose linkBins hapi-auth-basic@2.0.0-rc1
+255 verbose linkMans hapi-auth-basic@2.0.0-rc1
+256 verbose rebuildBundles hapi-auth-basic@2.0.0-rc1
+257 verbose rebuildBundles [ 'boom', 'hoek' ]
+258 info install hapi-auth-basic@2.0.0-rc1
+259 info postinstall hapi-auth-basic@2.0.0-rc1
+260 verbose readDependencies using package.json deps
+261 verbose already installed skipping hapi@>=8.x.x D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi
+262 silly resolved []
+263 error peerinvalid The package hapi does not satisfy its siblings' peerDependencies requirements!
+263 error peerinvalid Peer hapi-auth-jwt@1.1.0 wants hapi@>=6.x.x
+263 error peerinvalid Peer hapi-auth-basic@2.0.0-rc1 wants hapi@>=8.x.x
+264 error System Windows_NT 6.1.7600
+265 error command "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "hapi-auth-basic" "--save"
+266 error cwd D:\work\tutorials-sandbox\hapi-find-my-car\find-my-car-hapi
+267 error node -v v0.10.32
+268 error npm -v 1.4.28
+269 error code EPEERINVALID
+270 verbose exit [ 1, true ]
