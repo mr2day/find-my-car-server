@@ -5,6 +5,10 @@ var Schema = new Mongoose.Schema({
         type: String,
         required: true
     },
+    numberPlate: {  // TODO: create index on this
+        type: String,
+        required: true
+    },
     photoPath: {
         type: String,
         required: true

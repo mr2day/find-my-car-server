@@ -17,7 +17,7 @@ var Schema = new Mongoose.Schema({
         type: String,
         required: false
     },
-    numberPlate:  {
+    numberPlate:  {  // TODO: create index on this
         type: String,
         required: false
     },

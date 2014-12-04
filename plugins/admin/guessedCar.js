@@ -34,6 +34,7 @@ exports.register = function(plugin, options, next) {
 
                     var dto = new Model({
                         spotId: request.payload.spotId,
+                        numberPlate: request.payload.numberPlate,
                         photoPath: request.payload.photoPath,
                         dateUpdated: new Date(),
                     });
@@ -52,6 +53,7 @@ exports.register = function(plugin, options, next) {
             validate: {
                 payload: {
                     spotId: Joi.objectId(),
+                    numberPlate: Joi.string(),
                     photoPath: Joi.string(),
                 }
             }
@@ -155,6 +157,7 @@ exports.register = function(plugin, options, next) {
 
                     // update
                     if (request.payload.spotId) dto.spotId = request.payload.spotId;
+                    if (request.payload.numberPlate) dto.numberPlate = request.payload.numberPlate;
                     if (request.payload.photoPath) dto.photoPath = request.payload.photoPath;
 
                     dto.dateUpdated = new Date();
@@ -174,6 +177,7 @@ exports.register = function(plugin, options, next) {
                 },
                 payload: {
                     spotId: Joi.objectId(),
+                    numberPlate: Joi.string(),
                     photoPath: Joi.string(),
                 }
             }
