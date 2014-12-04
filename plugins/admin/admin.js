@@ -64,7 +64,7 @@ exports.register = function(plugin, options, next) {
         path: '/'+pluginName,
         method: 'GET',
         config: {
-            auth: 'adminBasic',
+            auth: false,
             handler: function (request, reply) {
             
                 Model.find(function(err, dtos) {
