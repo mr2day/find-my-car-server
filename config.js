@@ -5,17 +5,18 @@ module.exports = {
         'name': 'find-my-car-hapi'
     },
     'api': {
-        'host': 'localhost',
+        'host': '0.0.0.0',
         'port': '8000',
         'key': 'RRUix4M9lAbPBr3JmpJ1WGbD3BZiA0m8g11tnJkTQrhJLVe9KEzwMcXPGuVfpXu9'
     },
     'admin': {
-        'host': 'localhost',
+        'host': '0.0.0.0',
         'port': '8080'
     },
     'plugins': [
         
         // admin
+        { 'name': 'welcome', 'label': 'admin' },
         { 'name': 'admin', 'label': 'admin' },
         { 'name': 'user', 'label': 'admin' },
         { 'name': 'car', 'label': 'admin' },
@@ -25,6 +26,7 @@ module.exports = {
         { 'name': 'guessedCar', 'label': 'admin' },
 
         // api
+        { 'name': 'welcome', 'label': 'api' },
         { 'name': 'login', 'label': 'api' },
         { 'name': 'car', 'label': 'api' },
         { 'name': 'findCar', 'label': 'api' },
