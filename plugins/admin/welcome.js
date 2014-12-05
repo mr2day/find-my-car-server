@@ -8,7 +8,7 @@ exports.register = function(plugin, options, next) {
     // Routes:
     // Welcome
     plugin.route({
-        path: '/'+pluginName,
+        path: '/',
         method: 'GET',
         config: {
             auth: false,
