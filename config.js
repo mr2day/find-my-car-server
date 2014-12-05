@@ -5,12 +5,12 @@ module.exports = {
         'name': 'find-my-car-hapi'
     },
     'api': {
-        'host': '0.0.0.0',
+        'host': 'localhost',
         'port': '8000',
         'key': 'RRUix4M9lAbPBr3JmpJ1WGbD3BZiA0m8g11tnJkTQrhJLVe9KEzwMcXPGuVfpXu9'
     },
     'admin': {
-        'host': '0.0.0.0',
+        'host': 'localhost',
         'port': '8080'
     },
     'plugins': [
