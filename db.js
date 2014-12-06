@@ -1,8 +1,10 @@
 var Mongoose = require('mongoose');
 var config = require('./config');
 
+var dbURL = process.env.DATABASE_URL || 'mongodb://'+config.db.host;
+
 // connect to the db
-Mongoose.connect('mongodb://'+config.db.host+'/'+config.db.name);
+Mongoose.connect(dbURL+'/'+config.db.name);
 
 var db = Mongoose.connection;
 
